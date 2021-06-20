@@ -33,4 +33,4 @@ async def on_message(message):
         response = requests.request("POST", url, headers=headers, data=payload)
         await message.channel.send('Server is stopping...')
 
-client.run('ODU2MTI1MTg5NTMwODQ1MTk0.YM8etw.4Omnf9OlSRe2cWMZvRqSpBkw3xY')
+client.run()
