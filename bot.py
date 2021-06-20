@@ -18,7 +18,7 @@ async def on_message(message):
     
     if message.content.startswith('$'):
         payload = json.dumps({
-        "command": message.content
+        "command": message.content[1:]
         })
         response = requests.request("POST", url, headers=headers, data=payload)
 
