@@ -6,7 +6,7 @@ import json
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
 
-url = "https://hooks.nabu.casa/gAAAAABgz0ZAKe_79A0iqxUqQPfeD1Un3ki2uxO04tc7D025yssGVGfU65x5NGn4xueaUVlZBbyh0U5reWJ52VRbAtPbZgFFVRCAOsJBffu2dkKFfsIWU__kPYhu8NcqcD_XljKSV7g0-3JjD0sUSeK67OgjD-cz-pxpRtjs9ZVIdXOkLzFzSCw="
+url = 
 headers = { 'Content-Type': 'application/json' }
 
 @client.event
