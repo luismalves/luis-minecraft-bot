@@ -21,6 +21,5 @@ async def on_message(message):
         "command": message.content
         })
         response = requests.request("POST", url, headers=headers, data=payload)
-        await message.channel.send('Server is starting! Wait 30s...')
 
 client.run(os.getenv("DISCORD_TOKEN"))
