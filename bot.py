@@ -6,7 +6,7 @@ import json
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
 
-url = os.getenv('WEBHOOCK')
+url = os.getenv("WEBHOOCK")
 headers = { 'Content-Type': 'application/json' }
 
 @client.event
@@ -33,4 +33,4 @@ async def on_message(message):
         response = requests.request("POST", url, headers=headers, data=payload)
         await message.channel.send('Server is stopping...')
 
-client.run(os.getenv('DISCORD_TOKEN'))
+client.run(os.getenv("DISCORD_TOKEN"))
